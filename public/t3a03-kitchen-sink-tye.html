@@ -1,0 +1,83 @@
+<h2 align=center><font color=red> t3a03-kitchen-sink-tye </font></h2>
+
+<input type="text" id="myText01" placeholder="Type a number" value="">
+
+<input type="button" id="myButton01" value="Then mouse over me!" onMouseover="{
+
+	document.getElementById('myDiv01').innerHTML +=
+		document.getElementById('myText01').value
+
+myX = document.getElementById('myText01').value
+document.getElementById('myDiv01').innerHTML += '<br><br> myX variable: ' + myX
+
+
+
+	myDio()
+
+	myClearFunction()
+
+for (let myLoop = 0; myLoop < 100; myLoop++){
+
+		myLoopFunction()
+}
+
+
+
+myArray = new Array(myX)
+myArray[0] = myX * 1 + 10
+myArray[1] = myX * 6
+document.getElementById('myDiv01').innerHTML += '<br> myArray contains: ' + myArray
+
+myObj = {myNum : 18, myName : 'Tye'}
+document.getElementById('myDiv01').innerHTML += '<br> myObj contains: ' + myObj.myName + ', ' + myObj.myNum
+
+
+
+
+	
+
+
+}">
+
+
+
+<div id="myDiv01"></div>
+<div id="myDiv02"></div>
+
+
+
+
+
+<script>
+
+	function myDio(){
+
+var x = document.getElementById('myText01').value
+
+	if (x == 5){
+
+		document.getElementById('myDiv01').innerHTML = '<font color=blue>Dio is okay</font><br>'
+
+} else {
+
+	document.getElementById('myDiv01').innerHTML = '<font color=orange>Dio is not too bad</font><br>'
+
+}
+
+
+
+}
+
+	function myClearFunction(){
+
+		document.getElementById('myText01').value = ""
+
+}
+
+	function myLoopFunction(){
+
+		document.getElementById('myDiv02').innerHTML += '<font color=lime><br>Dio sucks</font>'
+
+}
+
+</script>
