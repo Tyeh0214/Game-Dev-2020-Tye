@@ -1,0 +1,154 @@
+<h1 align=center><font color=lime><b> Advanced Webpages Tye </b></font></h1>
+
+<b><i><u>Links to resources: </u></i></b><br><br>
+
+<a href="https://www.w3schools.com/css/default.asp"> CSS Tutorial </a><br>
+<a href="https://www.w3schools.com/tags/default.asp">HTML Reference</a><br>
+<a href="https://www.w3schools.com/html/html_forms.asp">Forms Tutorial</a><br>
+
+<hr>
+
+<form name="myFormName" id="myFormId" method="GET" action="https://www.google.ca">
+
+<b>First Name:</b> <input type="text" value="" placeholder="First Name"><br>
+
+<b>Last Name:</b> <input type="text" value="" placeholder="Last Name"><br>
+
+<b>Gender:</b>  Male<input type="radio" name="gender"> Female<input type="radio" name="gender"><br>
+
+<b>Password:</b> <input type="password" id="myPass" value=""><br>
+
+<b>Show Password:</b> <input type="checkbox" id="myCheckBox" onclick="{
+
+myCheck()
+
+}">  
+
+<div id="myDiv01">Password: </div><br>
+
+
+
+<input type="submit" id="mySubmit" class="myPop" value="Submit"><input type="reset" id="myReset" class="myPop" value="Reset">
+
+
+
+
+</form>
+
+
+
+<textarea class="myPop" rows=11 cols=35">
+
+Isn't this text just so useful! Like damn this is insaneeeeee
+
+
+
+</textarea>
+
+
+<select class="myPop" size=10 style="position:absolute; left:273; top:349;">
+	<option value='A'> A
+	<option value='B'> B
+	<option value='C'> C
+	<option value='D'> D
+	<option value='E'> E
+	<option value='F'> F
+	<option value='G'> G
+	<option value='H'> H
+	<option value='I'> I
+	<option value='J'> J
+</select>
+
+<div class="myColumn"><b><i>
+
+Ooooooooooooooooooooooo ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhh Fah who foraze! Dah who doraze!
+Welcome Christmas, come this way!
+Fah who foraze! Dah who doraze!
+Welcome Christmas, Christmas Day!
+
+Welcome, welcome! Fah who rahmus!
+Welcome, welcome! Dah who dahmus!
+Christmas Day is in our grasp!
+So long as we have hands to clasp!
+
+Fah who foraze! Dah who doraze!
+Welcome Christmas! Bring your cheer!
+Fah who foraze! Dah who doraze!
+Welcome all who's far and near!
+
+Fah who foraze! Dah who doraze!
+
+Welcome Christmas, come this way!
+Fah who foraze! Dah who doraze!
+Welcome Christmas, Christmas Day!
+
+Welcome, Christmas! Fah who rahmus!
+Welcome, Christmas! Dah who dahmus!
+Christmas Day will always be!
+Just as long as we have we!
+
+Fah who foraze! Dah who doraze!
+Welcome Christmas! Bring your cheer!
+Fah who foraze! Dah who doraze!
+Welcome all who's far and near!
+
+</i></b></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+body {
+	
+	background-color: red;
+
+}
+
+.myColumn {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: lime;
+}
+
+.myPop:hover {
+    margin-top: 0px;
+    -moz-box-shadow: 0px 0px 4px 1px blue;
+    -webkit-box-shadow: 0px 0px 4px 1px blue;
+    box-shadow: 0px 0px 4px 1px  blue;
+}
+
+</style>
+
+
+<script>
+
+function myCheck() {
+
+    let myCheckBox = document.getElementById("myCheckBox");
+
+    if (myCheckBox.checked == true){
+
+        document.getElementById("myDiv01").innerHTML = 'Password: ' + document.getElementById("myPass").value
+
+	} else {
+
+			document.getElementById("myDiv01").innerHTML = 'Password: '
+
+		}
+}
+
+</script>
