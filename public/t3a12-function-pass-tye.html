@@ -1,0 +1,58 @@
+<h2 align=center><font color=lime>Passing to functions Tye</font></h2>
+
+
+<input type=text id="myText01" placeholder='Enter A Slautation' value=""><br>
+<input type=text id="myText02" placeholder='Enter A Name' value=""><br>
+
+<input type=button value="Create Salutation" onclick="{
+
+document.getElementById('myDiv01').innerHTML = '<b>User: </b>' + myFun(document.getElementById('myText01').value, document.getElementById('myText02').value);
+
+setTimeout(function(){
+
+document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value.bold() + '<b>: </b>Thinking...'
+
+}, 1000)
+
+setTimeout(function(){
+
+document.getElementById('myDiv02').innerHTML = ' '
+
+}, 2000)
+
+setTimeout(function(){
+
+document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value.bold() + '<b>: </b>Hi, How are you?'
+
+}, 3000)
+
+
+
+}">
+
+<div id="myDiv01"><b></b></div>
+<div id="myDiv02"><b></b></div>
+
+<script>
+
+
+
+function myFun(myX, myY){
+
+  return myX + ', ' + myY
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

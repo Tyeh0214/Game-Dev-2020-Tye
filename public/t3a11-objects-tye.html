@@ -1,0 +1,70 @@
+<h2 align=center><font color=lime> Objects Tye</font></h2>
+
+<input type=text id="myText01" placeholder="First Name" value=""><br>
+<input type=text id="myText02" placeholder="Last Name" value=""><br>
+<input type=text id="myText03" placeholder="Age" value=""><br>
+<input type=text id="myText04" placeholder="Eye Colour" value=""><br>
+<input type=text id="myText05" placeholder="Hair Colour" value=""><br>
+<input type=text id="myText06" placeholder="Build" value=""><br>
+
+
+<input id="myButton01" type=button value="Store as an object" onclick="{
+
+myPerson = {
+
+   'firstName' : document.getElementById('myText01').value,
+   'lastName' : document.getElementById('myText02').value,
+   'age' : document.getElementById('myText03').value,
+   'eyeColour' : document.getElementById('myText04').value,
+   'hairColour' : document.getElementById('myText05').value,
+   'build' : document.getElementById('myText06').value
+
+}
+
+	document.getElementById('myDiv01').innerHTML = '<b>Name: </b>' + myPerson.firstName + ' ' + myPerson.lastName + ', <b>Age: </b>' + myPerson.age + ', <b>Eye Colour: </b>' + myPerson.eyeColour + ', <b>Hair Colour: </b>' + myPerson.hairColour + ', <b>Build: </b>' + myPerson.build + '<br>'
+}"><br><br>
+
+<div id="myDiv01">...</div><br>
+
+<input type=text id="myText07" placeholder="Make" value=""><br>
+<input type=text id="myText08" placeholder="Model" value=""><br>
+<input type=text id="myText09" placeholder="Sub Model" value=""><br>
+<input type=text id="myText10" placeholder="Year" value=""><br>
+<input type=text id="myText11" placeholder="Horse Power" value=""><br>
+<input type=text id="myText12" placeholder="Torque" value=""><br>
+<input type=text id="myText13" placeholder="Colour" value=""><br>
+
+
+<input id="myButton02" type=button value="Store as an object" onclick="{
+
+
+myCar = {
+
+   'myMake': document.getElementById('myText07').value,
+   'myModel': document.getElementById('myText08').value,
+   'mySubModel': document.getElementById('myText09').value,
+   'myYear': document.getElementById('myText10').value,
+   'myHorsePower': document.getElementById('myText11').value,
+   'myTorque': document.getElementById('myText12').value,
+   'myColour': document.getElementById('myText13').value
+
+}
+
+	
+
+	document.getElementById('myDiv02').innerHTML = '<b>Car: </b>' + myCar.myYear + ' ' + myCar.myMake + ' ' + myCar.myModel + ' ' + myCar.mySubModel + '<br><b>Horse Power: </b>' + myCar.myHorsePower + '<br><b>Torque: </b>' + myCar.myTorque + ' ft-lbs.' + '<br><b>Car Colour: </b>' + myCar.myColour
+}"><br><br>
+
+<div id="myDiv02">...</div><br>
+
+
+
+
+
+
+myObj = {
+
+'x': [4, 7, 8]
+
+
+}
