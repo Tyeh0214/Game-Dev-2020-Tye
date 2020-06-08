@@ -1,0 +1,79 @@
+<body style="background: url(GameArt/ThinIceLevel2.png); background-size: 100% 100%; position:absolute"></body>
+
+
+
+
+
+
+
+<img id="myImage04" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:174px;">
+<img id="myImage05" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:223px;">
+<img id="myImage06" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:272px;">
+<img id="myImage07" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:319px;">
+<img id="myImage08" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:364px;">
+<img id="myImage09" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:471px; top:412px;">
+
+<img id="myImage10" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:534px; top:412px;">
+<img id="myImage11" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:595px; top:412px;">
+<img id="myImage12" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:654px; top:412px;">
+
+<img id="myImage13" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:716px; top:413px;">
+<img id="myImage14" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:716px; top:319px;">
+<img id="myImage15" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:716px; top:364px;">
+<img id="myImage16" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:716px; top:462px;">
+<img id="myImage17" width=60 src="GameArt/WaterLayer.png" style="position:absolute; display:block; width:63px; height:49px; left:716px; top:509px;">
+
+<img id="myImage03" width=60 src="GameArt/RedWinLayer.png" style="position:absolute; display:block; width:61px; height:49px; left:1392px; top:698px;">
+
+<img id="myImage02" width=125 src="GameArt/ThinIceResetButton.png" class="myPop" style="position:absolute; display:block; width:125px; height:32px; left:376px; top:802px;">
+
+<img id="myImage01" width=65 src="GameArt/Thin_Ice_Puffle.gif" style="position:absolute; width:65px; height:70px; left:467px; top:157px;">
+
+
+
+
+<script>
+
+	let Reset = document.getElementById("myImage02");
+Reset.onclick = function(e) {
+  window.location.href = "Final Game Level 2.html";
+}
+
+document.onkeydown = checkKey
+
+function checkKey(myEvent){
+
+
+   if (myEvent.keyCode == 87){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 48 + 'px' }
+  
+			//W   
+
+   if (myEvent.keyCode == 68){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 61 + 'px'}
+
+			//A
+   
+   if (myEvent.keyCode == 65){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 61 + 'px' }
+
+			//S
+   
+   if (myEvent.keyCode == 83){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 48 + 'px' }
+
+			//D
+
+}
+
+</script>
+
+
+
+
+<style>
+
+.myPop:hover {
+    margin-top: 0px;
+    -moz-box-shadow: 0px 0px 4px 1px blue;
+    -webkit-box-shadow: 0px 0px 4px 1px blue;
+    box-shadow: 0px 0px 4px 1px  blue;
+}
+
+</style>
